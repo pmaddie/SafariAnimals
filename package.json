@@ -1,0 +1,24 @@
+{
+  "name": "safarianimals",
+  "version": "1.0.0",
+  "description": "add, update and delete different animals youd like to see on your safari tour and check off once youve seen each",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmaddie/SafariAnimals.git"
+  },
+  "keywords": [
+    "animals",
+    "orm",
+    "dbeaver"
+  ],
+  "author": "Madeline Prusak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmaddie/SafariAnimals/issues"
+  },
+  "homepage": "https://github.com/pmaddie/SafariAnimals#readme"
+}
