@@ -1,0 +1,10 @@
+<li>
+    {{!-- reference name on table --}}
+	{{name}}
+{{!-- added button with data attribute --}}
+	<button class="change-seen" data-id="{{id}}" data-seen="{{seen}}">
+		{{#if seen}}CHeck OFF LIST!{{else}}KEEP EYES PEELED!{{/if}}
+	</button>
+
+	<button class="delete-animal" data-id="{{this.id}}">DELETE!</button>
+</li>

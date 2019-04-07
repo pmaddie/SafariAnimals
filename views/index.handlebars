@@ -1,0 +1,39 @@
+<h1>Safari Animals!</h1>
+
+<h2>Animals Seen</h2>
+
+<ul>
+  {{#each safarianimals}}
+    {{#unless seen}}
+    {{!-- referencing partials --}}
+      {{> animals/safarianimals seen=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>On The Search For</h2>
+
+<ul>
+  {{#each safarianimals}}
+    {{#if seen}}
+      {{> animals/safarianimals seen=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add an ANIMAL</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="animal name">Animal Name:</label>
+    <input type="text" id="animal" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="seen">Seen yet?</label><br>
+    <input type="radio" name="seen" value="1" checked> SEEN!<br>
+    <input type="radio" name="seen" value="0" checked> STILL LOOKING!
+  </div>
+
+  <button type="submit">Add ANIMAL</button>
+</form>
