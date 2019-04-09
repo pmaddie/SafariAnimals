@@ -2,25 +2,27 @@ $(function() {
     $(".change-seen").on("click", function(event){
        event.preventDefault();
         let id = $(this).data("id");
-        let seen = $(this).data("seen");
+        let newseen = $(this).data("seen");
+        console.log(id)
+        // console.log(newseen)
 
 //to switch sides
-        if (seen == 1) {
-            seen = 0;
+        if (newseen == true) {
+            newseen == false;
         } else{
-            seen = 1;
+            newseen == true;
         };
         //to put into tables
 let newseenstate = {
-    seen: seen
+    seen: newseen
 };
-
+console.log(newseenstate)
 //sends info to update orm to change the value of seen
 $.ajax("/api/animals/" + id, {
         type: "PUT",
         data: newseenstate
     }).then(function(){
-console.log("changed seen state to: " + seen);
+console.log("changed seen state to: " + newseen);
 location.reload();
     })
 })

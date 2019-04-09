@@ -1,6 +1,6 @@
 <h1>Safari Animals!</h1>
 
-<h2>Animals Seen</h2>
+<div class="seen"><h2>Animals Seen</h2>
 
 <ul>
   {{#each safarianimals}}
@@ -10,8 +10,8 @@
     {{/unless}}
   {{/each}}
 </ul>
-
-<h2>On The Search For</h2>
+</div>
+<div class="search"><h2>On The Search For</h2>
 
 <ul>
   {{#each safarianimals}}
@@ -20,8 +20,10 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Add an ANIMAL</h2>
+
+<div class="add"><h2>Add an ANIMAL</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -31,9 +33,9 @@
 
   <div class="form-group">
     <label for="seen">Seen yet?</label><br>
-    <input type="radio" name="seen" value="1" checked> SEEN!<br>
-    <input type="radio" name="seen" value="0" checked> STILL LOOKING!
+    <input type="radio" name="seen" value="1" checked> STILL LOOKING!<br>
+    <input type="radio" name="seen" value="0" checked> SEEN! 
   </div>
 
   <button class="submitnew" type="submit">Add ANIMAL</button>
-</form>
+</form></div>

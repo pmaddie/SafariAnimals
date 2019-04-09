@@ -1,11 +1,33 @@
-/* body {
+body {
     background-image: url("https://images.pexels.com/photos/417142/pexels-photo-417142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-} */
-
-html {
-    background: red;
 }
+
+/* html {
+    background: red;
+} */
 
 h2 {
 color: blue;
+}
+
+.search {
+background: rgba(255, 255, 255, 0.534);
+width: 40%;
+border-radius: 24px;
+float: right;
+}
+
+.add {
+    background: rgba(255, 255, 255, 0.534);
+    width: 40%;
+    border-radius: 24px;
+    clear: left;
+   
+}
+
+.seen {
+    background: rgba(255, 255, 255, 0.534);
+    width: 40%;
+    border-radius: 24px;  
+    float: left;
 }
