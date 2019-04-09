@@ -1,7 +1,11 @@
-body {
+/* body {
     background-image: url("https://images.pexels.com/photos/417142/pexels-photo-417142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+} */
+
+html {
+    background: red;
 }
 
-.h2 {
+h2 {
 color: blue;
 }

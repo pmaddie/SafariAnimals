@@ -39,7 +39,7 @@ router.put("/api/animals/:id", function(req, res) {
   console.log("condition", condition);
 
   safariAnimal.update({
-    hasSeen: req.body.seen
+    seen: req.body.seen
   }, condition, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
