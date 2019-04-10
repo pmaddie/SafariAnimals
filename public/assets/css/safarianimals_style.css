@@ -7,7 +7,12 @@ body {
 } */
 
 h2 {
-color: blue;
+text-shadow: rgba(255, 255, 255, 0.534);
+margin-left: 5%;
+}
+
+h3 {
+    margin-left: 5%;
 }
 
 .search {
@@ -17,7 +22,8 @@ border-radius: 24px;
 float: right;
 }
 
-.add {
+.add {  
+    padding-top: 1%;
     background: rgba(255, 255, 255, 0.534);
     width: 40%;
     border-radius: 24px;
@@ -30,4 +36,25 @@ float: right;
     width: 40%;
     border-radius: 24px;  
     float: left;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.submitnew {
+    margin-left: 5%;
+    margin-block-end: 5%;
+}
+
+h1 {
+    font-family: 'Dokdo', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: wheat;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
